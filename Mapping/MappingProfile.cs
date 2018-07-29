@@ -1,6 +1,6 @@
 using AutoMapper;
 using vega.Models;
-using vega_angular_dotnet.Controllers.Resources;
+using vega.Controllers.Resources;
 
 namespace vega_angular_dotnet.Mapping
 {
@@ -10,6 +10,7 @@ namespace vega_angular_dotnet.Mapping
         {
             CreateMap<Make, MakeResource>();
             CreateMap<Model, ModelResource>();
+            CreateMap<Feature, FeatureResource>();
         }
     }
 }

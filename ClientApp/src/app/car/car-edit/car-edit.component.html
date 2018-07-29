@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-sm-6">
+      <h1>New car</h1>
+    <form>
+      <div class="form-group">
+        <label for="makeSelection">Make</label>
+        <select class="form-control" id="makeSelection">
+          <option *ngFor="let car of cars">{{ car }}</option>
+        </select>
+      </div>
+      <div class="form-group">
+          <label for="featureSelection">Features</label>
+          <select class="form-control" id="featureSelection">
+              <option *ngFor="let feature of features">{{ feature }}</option>
+          </select>
+        </div>
+        <div class="form-check">
+            <legend>Is this vehicle registered?</legend>
+            <input class="form-check-input" type="radio" name="isRegistred" id="isRegistred" value="option1" checked>
+            <label class="form-check-label" for="isRegistred">
+              Yes
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="isRegistred" id="isNotRegistred" value="option2">
+            <label class="form-check-label" for="isNotRegistred">
+              no
+            </label>
+          </div>
+          <div class="form-group">
+              <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+    </form>
+  </div>
+</div>
+

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
-namespace vega_angular_dotnet.Controllers.Resources
+namespace vega.Controllers.Resources
 {
     public class MakeResource
     {

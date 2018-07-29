@@ -1,6 +1,6 @@
 using vega.Models;
 
-namespace vega_angular_dotnet.Controllers.Resources
+namespace vega.Controllers.Resources
 {
     public class ModelResource
     {
