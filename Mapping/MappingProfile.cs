@@ -4,7 +4,7 @@ using vega.Controllers.Resources;
 using System.Linq;
 using static vega.Controllers.Resources.VehicleResource;
 
-namespace vega_angular_dotnet.Mapping
+namespace vega.Mapping
 {
     public class MappingProfile : Profile
     {
