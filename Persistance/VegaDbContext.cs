@@ -5,6 +5,7 @@ namespace vega.Persistance
 {
     public class VegaDbContext : DbContext
     {
+        public DbSet<Vehicle> Vehicles{ get; set; }
         public DbSet<Make> Makes {get; set;}
 
         public DbSet<Feature> Features {get; set;}
@@ -15,7 +16,8 @@ namespace vega.Persistance
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<VehicleFeature>().HasKey(vf => new{vf.VehicleId, vf.FeatureId });
+            modelBuilder.Entity<VehicleFeature>().HasKey(vf => 
+                new{vf.VehicleId, vf.FeatureId });
         }
     }
 }
